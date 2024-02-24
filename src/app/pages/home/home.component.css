@@ -1,0 +1,214 @@
+/* =================================
+     Contenedor de imagen del perfil
+     ================================= */
+.contenedor-imagen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 184px;
+  margin-top: 56px;
+}
+
+.imagen-redonda {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.imagen-redonda img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ============================
+   Contenedor de links externos
+   ============================ */
+.redes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 24px;
+  font-size: 17.6px;
+}
+
+.redes a.git {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 128px;
+  height: 32px;
+  border: 1.2px solid rgba(177, 177, 183, 0.9);
+  border-radius: 25px;
+  color: rgb(177, 177, 183); /* Color del texto */
+  text-decoration: none; /* Elimina el subrayado predeterminado del enlace */
+  margin: 0 8px;
+}
+
+.redes a.linkedin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 136px;
+  height: 32px;
+  border: 1.2px solid rgba(177, 177, 183, 0.9);
+  border-radius: 25px;
+  color: rgb(177, 177, 183); /* Color del texto */
+  text-decoration: none; /* Elimina el subrayado predeterminado del enlace */
+  transition: color 0.5s ease; /* Agrega una transición suave al cambio de color */
+  margin: 0 8px;
+}
+
+.redes a.cv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 152px;
+  height: 32px;
+  border: 1.2px solid rgba(177, 177, 183, 0.9);
+  border-radius: 25px;
+  color: rgb(177, 177, 183); /* Color del texto */
+  text-decoration: none; /* Elimina el subrayado predeterminado del enlace */
+  transition: color 0.5s ease; /* Agrega una transición suave al cambio de color */
+  margin: 0 8px;
+}
+
+/* Estilo al pasar el ratón por encima del enlace */
+.redes a:hover {
+  color: rgb(83, 7, 1); /* Cambia el color del texto al pasar el ratón */
+  border: 1.2px solid rgba(83, 7, 1, 0.9);
+  background-color: #00000066;
+  box-shadow: 0 0 15px rgba(83, 7, 1, 0.7);
+  transition: color 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease,
+    border 0.5s ease;
+}
+
+.redes i.fa-icon-margin {
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+
+/* =======================================
+     Contenedor de descripción y habilidades
+     ======================================= */
+.contenedor {
+  display: flex;
+  align-items: flex-start;
+  margin: auto;
+  left: -50px;
+  border: 0.8px solid rgb(119, 104, 104); /* Tamaño del borde del contenedor*/
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.2); /* Color de fondo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  margin-bottom: 160px;
+  width: 80vw;
+  overflow: hidden;
+  
+}
+
+.izquierda,
+.derecha {
+  flex: 1;
+  padding: 16px;
+}
+
+.derecha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo-seccion {
+  text-align: center;
+  padding-left: 8px;
+  color: white;
+  top: 0;
+  height: 26px;
+  font-size: 2em;
+}
+
+.subtitulo-seccion {
+  text-align: center;
+  font-size: 1em;
+}
+
+.texto-seccion {
+  text-align: left;
+  padding-left: 8px;
+  font-size: 16px;
+  color: rgb(177, 177, 183);
+  margin-bottom: 8px; /* Espacio entre el título y el texto */
+  line-height: 1.5; /* Espaciado entre líneas del texto */
+}
+
+.titulo-seccion-izquierda {
+  text-align: left;
+  padding-left: 8px;
+  padding-bottom: 8px;
+  color: white;
+  top: 0;
+}
+
+.habilidad {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 8px;
+  border-radius: 7px;
+  width: calc(33.33% - 10px);
+  background-color: rgba(104, 21, 21, 0.1); /* Color de fondo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  font-size: 16px;
+}
+
+.habilidad:hover {
+  box-shadow: 0 0 20px rgba(83, 7, 1, 0.7);
+  transition: box-shadow 0.5s ease;
+}
+
+.habilidades-fila {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 8px;
+  margin: 0 - 4px;
+}
+
+.habilidad img {
+  width: 32px; /* Ajusta el tamaño del icono */
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+/* ===================================
+     Estilos para pantallas más pequeñas
+     =================================== */
+@media screen and (max-width: 768px) {
+  .contenedor {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .izquierda,
+  .derecha {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .habilidad {
+    width: 48%;
+    margin-right: 0;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .habilidades-fila {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 40%;
+  }
+}

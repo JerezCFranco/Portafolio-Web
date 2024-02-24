@@ -1,0 +1,33 @@
+<div class="calculadora-container">
+    
+    <div class="calculadora">
+        <h1>Calculadora</h1>
+        <input type="text" [(ngModel)]="pantallaValor" readonly id="pantalla">
+        <br>
+        <input type="button" value="*" (click)="agregar('*')">
+        <input type="button" value="/" (click)="agregar('/')">
+        <input class="red" type="button" value="C" (click)="borrar()">
+        <input class="red" type="button" value="⌫" (click)="borrarUltimo()">
+        <br>
+        <input type="button" value="7" (click)="agregar('7')">
+        <input type="button" value="8" (click)="agregar('8')">
+        <input type="button" value="9" (click)="agregar('9')">
+        <input type="button" value="+" (click)="agregar('+')">
+        <br>
+        <input type="button" value="4" (click)="agregar('4')">
+        <input type="button" value="5" (click)="agregar('5')">
+        <input type="button" value="6" (click)="agregar('6')">
+        <input type="button" value="-" (click)="agregar('-')">
+        <br>
+        <input type="button" value="1" (click)="agregar('1')">
+        <input type="button" value="2" (click)="agregar('2')">
+        <input type="button" value="3" (click)="agregar('3')">
+        <input class="green" type="button" value="=" (click)="calcular()">
+        <br>
+        <input type="button" value="0" (click)="agregar('0')">
+        <input type="button" value="." (click)="agregar('.')">
+
+        <br>
+
+    </div>
+</div>

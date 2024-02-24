@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  background-image: url("./fondo-calculadora.jpg") !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.calculadora-container {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  background-image: url("./fondo-calculadora.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 20px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 30px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 10px;
+  color: #666;
+}
+
+.calculadora {
+  width: 270px;
+  margin: 0 auto;
+  background-color: #1e1e1e;
+  padding: 4px;
+  border-radius: 5px;
+  border-color: #000000;
+  border-width: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.calculadora input[type="button"] {
+  width: calc((100% - 20px) / 4);
+  height: 40px;
+  margin: 2.5px;
+  font-size: 16px;
+  background-color: #5a5a5a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#pantalla {
+  font-family: 'Courier New', Courier, monospace;
+  width: 97%;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 4px;
+  margin-bottom: 10px;
+  text-align: right;
+  background-color: #566653;
+  color: black;
+  border: none;
+}
+
+#pantalla:focus {
+  outline: none;
+}
+
+input[type="text"] {
+  width: 93%;
+  padding: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  text-align: right;
+}
+
+input[type="button"] {
+  width: 60px;
+  height: 40px;
+  margin-right: 2.5px;
+  margin-bottom: 2.5px;
+  font-size: 16px;
+  background-color: #333333;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.calculadora input[type="button"].green {
+  background-color: #4caf50;
+}
+
+.calculadora input[type="button"].green:hover {
+  background-color: #2b622d;
+}
+
+.calculadora input[type="button"].red {
+  background-color: #af4c4c;
+}
+
+.calculadora input[type="button"].red:hover {
+  background-color: #622b2b;
+}
+
+.calculadora input[type="button"]:hover {
+  background-color: #3c3b3b;
+}
+
+.calculadora input[type="button"]:last-child {
+  margin-right: 0;
+}

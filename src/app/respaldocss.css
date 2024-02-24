@@ -1,0 +1,128 @@
+/*Sección de la Navbar*/
+.navbar {
+    position: fixed;
+    display: flex;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(173, 216, 230, 0.2) !important; /* Color de fondo de la navbar */
+    justify-content: space-around; /* Centrado horizontal */
+    align-items: center; /* Centrado de los elementos */
+    height: 40px; /* Altura de la navbar */
+    border-radius: 30px;
+  }
+  
+  .navbar.navbar-expand-lg.bg-body-tertiary{
+    border: 0.8px solid white; /* Tamaño del borde de la navbar*/
+  }
+  
+  .navbar-color {
+    color: red; /* Color del texto en la barra de navegación */
+  }
+  
+  .navbar a {
+    padding: 0 25px; /* Separación entre los elementos en la navbar */
+    width: auto;
+    white-space: nowrap;
+  }
+  
+  .nav-text {
+    font-size: 16px; /*Tamaño de las letras para la navbar*/
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  /*Sección del contenedor de imagen del perfil*/
+  .contenedor-imagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    margin-top: 50px;
+  }
+  
+  .imagen-redonda {
+    width: 200px; /* Anchura de la imagen de perfil */
+    height: 200px; /* Altura de la imagen de perfil */
+    border-radius: 50%; /* Redondeo de los bordes de la imagen de perfil */
+    overflow: hidden; /* Garantiza que la imagen redonda no sobresalga de su contenedor */
+  }
+  
+  .imagen-redonda img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el comportamiento de la imagen para cubrir el contenedor */
+  }
+  
+  .texto-debajo {
+    text-align: center; /* Centra el texto */
+  }
+  
+  /*La imagen de fondo en la página*/
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../assets/img/background.jpg"); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la página */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: Arial, sans-serif; /* Fuente de letra */
+  }
+  
+  .contenedor {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /*border: 0.8px solid rgb(119, 104, 104); /* Tamaño del borde del contenedor*/
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2); /* Color de fondo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    overflow: hidden;
+  }
+  
+  .izquierda,
+  .derecha {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .derecha {
+    border-left: 1px solid #ddd; /* Línea divisoria entre las secciones */
+  }
+  
+  .habilidad {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: rgba(104, 21, 21, 0.1); /* Color de fondo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  
+  .habilidad img {
+    width: 40px; /* Ajusta el tamaño del icono */
+    margin-right: 10px;
+    
+  }
+  
+  
+  /*
+  <div class="card">
+    <div class="informacion-personal">
+      <h3>Sobre mí</h3>
+      <p>Me gusta encontrar soluciónes a la hora de programar, desarrollar muchas aplicaciónes o programas
+        aprender cada día las mejores practicas del sector.
+      </p>
+    </div>
+    <div class="habilidades">
+      <h2>Habilidades</h2>
+      <div class="habilidad">
+        <img src="../assets/img/js.png" alt="icono javascript">
+      </div>
+    </div>
+  </div>
+  */

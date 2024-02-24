@@ -1,0 +1,77 @@
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+}
+
+h1 {
+  color: rgb(177, 177, 183);
+  padding-bottom: 15px;
+}
+
+input[type="text"] {
+  width: 300px;
+  height: 44px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#results {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.movie {
+  min-height: 200px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1.2px solid rgba(83, 7, 1, 0.7);
+  border-radius: 15px;
+  display: flex;
+}
+
+
+.movie img {
+  width: 100px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.movie-info {
+  flex: 1;
+  padding: 0 20px;
+  color: rgb(177, 177, 183);
+}
+
+.movie-info h2{
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: rgb(83, 7, 1);
+}
+
+#movieContainer .movie-info p {
+  margin-bottom: 10px;
+}
+
+.movie h2 {
+  font-size: 30px;
+  margin-top: 0;
+}
+
+.movie p {
+  font-size: 14px;
+  margin: 5px 0;
+}

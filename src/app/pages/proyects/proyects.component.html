@@ -1,0 +1,32 @@
+<h1 class="encabezado">Proyectos</h1>
+<a class="contenedor-proyectos" routerLink="/proyects/buscador-peliculas" [ngClass]="{active: menuOption == 'buscador-peliculas'}" (click)="onOption('buscador-peliculas')">
+  <div class="izquierda">
+    <h4 class="titulo-seccion-izquierda-proyecto">Buscador de películas</h4>
+    <div class="texto-seccion">
+      <p>Proyecto</p>
+      <p>
+        Nombre: Tu Nombre <br>
+        Edad: Tu Edad
+      </p>
+    </div>
+  </div>
+</a>
+
+<a class="contenedor-proyectos" routerLink="/proyects/calculadora" [ngClass]="{active: menuOption == 'calculadora'}" (click)="onOption('calculadora')">
+  <div class="izquierda">
+    <h4 class="titulo-seccion-izquierda-proyecto">Calculadora Basica</h4>
+    <div class="texto-seccion">
+      <p>
+        Fue uno de los primeros proyectos que realicé
+        para aprender el funcionamiento de Javascript.
+        Por lo cual la calculadora originalmente, fue realizada en Javascript,
+        pero adaptada a Angular utilizando Typescript.
+      </p>
+    </div>
+  </div>
+  <div class="derecha">
+    <div class="habilidad">
+      <img src="assets/img/fondo-calcu.jpg" alt="calculadora">
+    </div>
+  </div>
+</a>

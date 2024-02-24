@@ -1,0 +1,131 @@
+/* =====================
+   Navbar
+   ===================== */
+
+.navbar.navbar-expand-md.bg-body-tertiary {
+  position: fixed;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(26, 15, 15) !important;
+  justify-content: space-around;
+  align-items: center;
+  height: 32px;
+  border-radius: 30px;
+  transition: border 0.5s ease, box-shadow 0.5s ease;
+  border: 0.8px solid rgb(177, 177, 183); /* Tamaño del borde de la navbar*/
+}
+
+.navbar.navbar-expand-md.bg-body-tertiary:hover {
+  border: 1.2px solid rgba(83, 7, 1, 0.9);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(83, 7, 1, 0.3));
+  box-shadow: 0 0 15px rgba(83, 7, 1, 0.7); /* Ajusta el valor según sea necesario para obtener el efecto deseado */
+}
+
+
+.navbar.navbar-expand-md.bg-body-tertiary-calculadora {
+  position: fixed;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(30, 30, 30) !important;
+  justify-content: space-around;
+  align-items: center;
+  height: 32px;
+  border-radius: 30px;
+  transition: border 0.5s ease, box-shadow 0.5s ease;
+  border: 0.8px solid rgb(177, 177, 183); /* Tamaño del borde de la navbar*/
+}
+
+.navbar.navbar-expand-md.bg-body-tertiary-calculadora:hover {
+  border: 1.2px solid rgba(60, 59, 59, 0.9);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(60, 59, 59, 0.3));
+  box-shadow: 0 0 15px rgba(60, 59, 59, 0.7); /* Ajusta el valor según sea necesario para obtener el efecto deseado */
+}
+
+/* =====================
+   Navbar Links
+   ===================== */
+.navbar a {
+  padding: 0 24px; /* Separación entre los elementos en la navbar */
+  width: auto;
+  color: rgb(177, 177, 183);
+  font-size: 15px;
+  white-space: nowrap;
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.navbar a.active {
+  text-shadow: 0 0 15px rgba(173, 37, 13, 0.5); /* Fondo brillante, ajusta según sea necesario */
+  color: rgba(83, 7, 1);
+}
+
+.navbar a:hover {
+  text-shadow: 0 0 5px rgba(83, 7, 1, 0.9);
+  color: rgb(83, 7, 1);
+}
+
+/* =====================
+   Navbar Text
+   ===================== */
+.nav-text {
+  font-size: 12.8px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+
+.nav-text:hover {
+  width: auto;
+  transition: color 0.6s ease; /* Agrega una transición suave al cambio de color */
+  color: rgb(83, 7, 1); /* Cambia el color del texto al pasar el ratón */
+}
+
+.nav-text-calculadora {
+  font-size: 12.8px;
+  color: rgb(177, 177, 183);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+
+.nav-text-calculadora a:hover {
+  width: auto;
+  transition: color 0.6s ease; /* Agrega una transición suave al cambio de color */
+  color: rgb(255, 255, 255) !important; /* Cambia el color del texto al pasar el ratón */
+}
+
+.nav-item {
+  padding-bottom: 5px;
+}
+
+
+
+
+/* ===================================
+   Estilos para pantallas más pequeñas
+   =================================== */
+@media screen and (max-width: 768px) {
+  .contenedor {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .izquierda,
+  .derecha {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .habilidad {
+    width: 48%;
+    margin-right: 0;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .habilidades-fila {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 40%;
+  }
+}

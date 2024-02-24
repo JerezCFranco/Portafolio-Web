@@ -1,0 +1,100 @@
+/* =================================
+   Contenedor de proyecto y imagenes
+   ================================= */
+
+.encabezado {
+    left: 0;
+    padding-bottom:16px;
+    margin-top: 100px;
+    font-size: 2em;
+}
+
+   
+.contenedor-proyectos {
+  display: flex;
+  align-items: flex-start;
+  margin: auto;
+  left: -50px;
+  border: 0.8px solid rgb(119, 104, 104); /* Tamaño del borde del contenedor*/
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  margin-bottom: 100px;
+  width: 80vw;
+  overflow: hidden;
+  text-decoration: none;
+  transition: background 0.9s ease;
+}
+
+.contenedor-proyectos a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contenedor-proyectos:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(83, 7, 1, 0.3));
+  border: 1.2px solid rgba(83, 7, 1, 0.9);
+  box-shadow: 0 0 20px rgba(83, 7, 1, 0.7);
+  transition: border 0.5s ease, box-shadow 0.5s ease;
+}
+
+.contenedor-proyectos:hover .titulo-seccion-izquierda-proyecto {
+  color: rgba(83, 7, 1);
+  transition: color 0.4s ease;
+}
+
+.titulo-seccion-izquierda-proyecto {
+  text-align: left;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  color: white;
+  top: 0;
+}
+
+.titulo-seccion-izquierda-proyecto:hover {
+  color: rgba(83, 7, 1);
+}
+
+.texto-seccion {
+  text-align: left;
+  padding-left: 10px;
+  font-size: 16px;
+  color: rgb(177, 177, 183);
+  margin-bottom: 10px; /* Espacio entre el título y el texto */
+  line-height: 1.5; /* Espaciado entre líneas del texto */
+}
+
+.izquierda,
+.derecha {
+  flex: 1;
+  padding: 20px;
+}
+
+.derecha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.derecha img {
+  max-width: 100%;
+  border-radius: 7px;
+}
+
+.habilidad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 8px;
+  border-radius: 7px;
+  width: calc(100%);
+  font-size: 12px;
+}
+
+.habilidad img {
+  height: 210px;
+  width: 500px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
